@@ -1,0 +1,34 @@
+<div class="login text-center">
+  <div class="card">
+    <div class="card-block">
+<h2>Sign up svsdfsdfvdzf</h2>
+
+<form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="i9q-L67v_sGoQ-5C8R7MvDyVUhEKOk0J2ud8P3Ex1eeLbGV8TZvPgfl36xB5OonP6Cx031MERjAkc-7JK6hhgw" />
+  
+
+  <div class="form-group">
+    <label for="user_email">Email</label><br />
+    <input autofocus="autofocus" autocomplete="email" type="email" value="" name="user[email]" id="user_email" />
+  </div>
+
+  <div class="form-group">
+    <label for="user_password">Password</label>
+    <em>(6 characters minimum)</em>
+    <br />
+    <input autocomplete="new-password" type="password" name="user[password]" id="user_password" />
+  </div>
+
+  <div class="form-group">
+    <label for="user_password_confirmation">Password confirmation</label><br />
+    <input autocomplete="new-password" type="password" name="user[password_confirmation]" id="user_password_confirmation" />
+  </div>
+
+  <div class="form-group">
+    <input type="submit" name="commit" value="Sign up" class="btn btn-primary" data-disable-with="Sign up" />
+  </div>
+</form>
+<div class="auth-links">
+  <a href="/users/sign_in">Log in</a><br />
+
+<% end %>
+<%= render "users/shared/links" %>

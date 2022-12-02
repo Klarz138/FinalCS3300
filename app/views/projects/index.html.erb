@@ -1,14 +1,56 @@
-<p style="color: green"><%= notice %></p>
+<p id="notice"><%= notice %></p>
+<style>
+h1 {
+  color: black;
+  border: none;
+  text-align: center;
+}
 
-<h1>Projects</h1>
+table {
+  background-color: #ffffff;
+  color: black;
+}
 
-<div id="projects">
-  <% @projects.each do |project| %>
-    <%= render project %>
-    <p>
-      <%= link_to "Show this project", project %>
-    </p>
-  <% end %>
-</div>
+body {
+  background-color: #88bbbd;
+}
+</style>
 
-<%= link_to "New project", new_project_path %>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4" style= "font-family: Century Schoolbook"> Katherine Larsen's Portfolio!</h1>
+      <p><center> <font size="5"> Welcome to my final project for CS 3300.<center></p>
+      <p><center> Please browse below at my projects, or sign in/make an account to create your own projects!<center></p>
+      </div>
+      </div>
+    <h1>Projects</h1>
+    
+    <div class="navbar-nav mr-auto text-center">
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Show</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <% @projects.each do |project| %>
+          <tr>
+            <td><%= project.title %></td>
+            <td><%= project.description %></td>
+            <td><u><%= link_to 'Show', project %></u></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    </div>
+    <br>
+    
+        <center><u><%= link_to 'New Project', new_project_path %></u></center>
+    
+    </div>
+      

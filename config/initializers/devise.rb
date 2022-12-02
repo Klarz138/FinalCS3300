@@ -14,7 +14,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'f47b186b0d7217936a9225733e90081a7b9c575723366e0903dfe144d294168e2078632477501e8a27e536a62dfab578564711a3b93cca3a3296932ca36c7ccc'
+  # config.secret_key = '89638723daabe4a0099c9b4778177d0b7f2a96f993ddcc1fe0f670f7b7a4e6e7007bca526f7719107da47c0ca98793130fd4f267c838b5d7cbffb1bca43fc60b'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -126,7 +126,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '86d78d0d2a8816656978d3f01c768fa3b0e69e01dff1fd6288db30f7e0c1ab1d5c6c88001c2e798d294643323a38c1f553ecf966ded178c0f43b4cd90b2edd53'
+  # config.pepper = '9fc3fd54c32837a692d420d732a2cb84c2baf92bdebb95eeb42b1929207d437d1e140d5a2cc3acd3249e891f0959cebf1cd877768f5cdb638e09de057185f8d0'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -252,7 +252,7 @@ Devise.setup do |config|
 
   # Set this configuration to false if you want /users/sign_out to sign out
   # only the current scope. By default, Devise signs out all scopes.
-  # config.sign_out_all_scopes = true
+  #config.sign_out_all_scopes = true
 
   # ==> Navigation configuration
   # Lists the formats that should be treated as navigational. Formats like

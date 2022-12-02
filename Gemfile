@@ -88,3 +88,7 @@ end
 group :test do
   gem 'factory_bot_rails'
 end
+
+gem 'bootstrap', '~> 5.2.2'
+
+gem 'jquery-rails'
